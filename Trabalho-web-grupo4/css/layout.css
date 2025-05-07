@@ -1,0 +1,138 @@
+/* Resetando estilos padrão para evitar problemas de espaçamento */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+/* Seção Home - Imagem principal */
+.home-container {
+    width: 100%; /* Ajuste para ocupar toda a largura */
+    display: flex;
+    justify-content: center;
+
+}
+
+.home-container img {
+    width: 100%; /* Redimensionamento adequado */
+    height: auto; /* Mantém proporção original */
+}
+
+/* Estilizando a sobreposição de texto na imagem */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background: rgba(0, 51, 102, 0.7); /* Cor escura para melhorar legibilidade */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza o conteúdo */
+    align-items: center; /* Alinha o texto */
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.5s; /* Suaviza a transição ao passar o mouse */
+}
+
+/* Efeito ao passar o mouse na imagem */
+.home-container:hover .overlay {
+    opacity: 1; /* Faz o texto aparecer sobre a imagem */
+}
+
+/* Cabeçalho abaixo da imagem */
+header {
+    padding: 20px;
+    background-color: #003366;
+    color: white;
+}
+
+/* Menu de navegação */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none; /* Remove marcadores de lista - aquelas bolinhas do lado esquerdo*/
+    gap: 15px;
+    padding: 10px;
+    background-color: #004080;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Seções do site */
+section {
+    padding: 45px;
+}
+
+/* Conteiner de imagens para atrações turísticas */
+.imagens-container {
+    display: flex; /* Organiza as imagens lado a lado */
+    justify-content: center; /* Centraliza */
+    gap: 20px; /* Adiciona espaçamento entre as imagens */
+    flex-wrap: wrap; /* Permite ajuste para telas menores */
+}
+
+/* estilo das imagens individuais */
+.imagens-container  img {
+    width: 200px; /* Define tamanho menor para caberem lado a lado */
+    height: auto; /* Mantém proporção original */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra suave */
+    transition: transform 0.3s ease; /* Efeito suave ao passar o mouse */
+}
+
+/* Efeito ao passar o mouse */
+.imagens-container img:hover {
+    transform: scale(1.1); /* Aumenta levemente ao passar o mouse */
+}
+
+/* Rodapé */
+footer {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+}
+
+/* Contêiner dos eventos turísticos */
+.eventos-container {
+    display: flex; /* Organiza imagens lado a lado */
+    justify-content: center; /* Centraliza */
+    align-items: center; /* Alinha verticalmente */
+    gap: 20px; /* Espaço entre imagens */
+    margin-top: 20px;
+    flex-wrap: wrap; /* Permite ajuste para telas menores */
+}
+
+/* Estilização das imagens de eventos */
+.eventos-container img {
+    width: 250px; /* Define tamanho menor para caberem lado a lado */
+    height: auto; /* Mantém proporção original */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra suave */
+    transition: transform 0.3s ease; /* Efeito suave ao passar o mouse */
+}
+
+/* Efeito ao passar o mouse */
+.eventos-container img:hover {
+    transform: scale(1.1); /* Aumenta levemente ao passar o mouse */
+}
+
+/* Estilização das listas para remover os marcadores padrão */
+ul {
+    list-style-type: none; /* Remove os marcadores de lista */
+    padding: 0;
+    margin: 0;
+}

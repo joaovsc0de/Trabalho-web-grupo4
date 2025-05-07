@@ -1,0 +1,251 @@
+/* Resetando estilos padrão para evitar problemas de espaçamento */
+* {
+    margin: 0; /* Remove margem de todos os elementos */
+    padding: 0; /* Remove preenchimento de todos os elementos */
+    box-sizing: border-box; /* Define o box-sizing como border-box para incluir o padding e a borda no tamanho total dos elementos */
+}
+
+/* Estilo do corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte como Arial, com uma alternativa sans-serif */
+    text-align: center; /* Centraliza o texto na página */
+    background-color: #fff; /* Define a cor de fundo como branca */
+    background-size: cover; /* Faz com que o fundo cubra toda a área disponível */
+    background-repeat: no-repeat; /* Impede que o fundo se repita */
+    background: radial-gradient(#b1d5f5, white, #b1d5f5); /* Aplica um gradiente radial como fundo */
+}
+
+/* Seção Home - Imagem principal */
+.home-container {
+    width: 100%; /* Ajusta a largura para ocupar toda a largura disponível */
+    display: flex; /* Usando flexbox para organizar os elementos */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Alinha o conteúdo verticalmente */
+    background-image: url("../img/Arco.png"); /* Define uma imagem de fundo para a seção */
+}
+
+.home-container img {
+    width: 100%; /* Faz com que a imagem ocupe toda a largura da sua área pai */
+    height: auto; /* Mantém a proporção original da imagem */
+}
+
+/* Estilizando a sobreposição de texto na imagem */
+.overlay {
+    position: absolute; /* Posiciona o texto sobre a imagem */
+    top: 0; /* Alinha ao topo da área */
+    left: 0; /* Alinha à esquerda da área */
+    width: 100%; /* O texto ocupa toda a largura */
+    height: 100%; /* O texto ocupa toda a altura */
+    color: black; /* Define a cor do texto como preta */
+    display: flex; /* Usando flexbox para organizar os elementos dentro */
+    flex-direction: column; /* Organiza o texto em uma coluna */
+    justify-content: center; /* Centraliza o texto verticalmente */
+    align-items: center; /* Alinha o texto horizontalmente */
+}
+
+/* Efeito de visibilidade no hover (passar o mouse sobre a imagem) */
+.home-container:hover .overlay {
+    opacity: 1; /* Torna o texto visível */
+}
+
+/* Cabeçalho da página */
+header {
+    padding: 20px; /* Adiciona preenchimento ao cabeçalho */
+    background-color: rgba(255, 255, 255, 0.0); /* Torna o fundo do cabeçalho transparente */
+    color: #004080; /* Define a cor do texto como azul escuro */
+}
+
+/* Menu de navegação */
+nav ul {
+    display: flex; /* Organiza os itens da lista horizontalmente */
+    justify-content: center; /* Centraliza os itens no menu */
+    list-style: none; /* Remove os marcadores de lista */
+    gap: 15px; /* Adiciona um espaçamento entre os itens */
+    padding: 10px; /* Adiciona um preenchimento ao redor do menu */
+    background-color: #004080; /* Define a cor de fundo do menu */
+}
+
+nav a {
+    color: white; /* Define a cor do texto dos links como branca */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-weight: bold; /* Define o texto como negrito */
+}
+
+/* Estilo das seções */
+section {
+    background: #fff; /* Define o fundo das seções como branco */
+    margin: 30px; /* Adiciona uma margem ao redor da seção */
+}
+
+section li {
+    color: black; /* Define a cor dos itens da lista como preta */
+    font-weight: bold; /* Define o texto dos itens como negrito */
+}
+
+section p {
+    color: #004080; /* Define a cor do texto como azul escuro */
+    font-weight: bold; /* Define o texto como negrito */
+}
+
+/* Estilo para o título e subtítulo */
+.title, .subtitulo {
+    color: black; /* Define a cor do texto como preta */
+    text-shadow: 0px 4px 8px rgb(252, 252, 252); /* Adiciona uma sombra suave ao texto */
+}
+
+/* Estilos para a sobreposição de texto na imagem */
+.overlay h1, .overlay h2 {
+    opacity: 0; /* Torna o texto invisível inicialmente */
+    transition: opacity 1s ease-in-out; /* Define uma transição suave para a opacidade */
+    font-size: 180px; /* Define o tamanho da fonte do título */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define a família da fonte */
+    text-shadow: 0px 4px 8px rgb(252, 252, 252); /* Adiciona uma sombra ao texto */
+}
+
+/* Estilo ao passar o mouse sobre a sobreposição */
+.overlay:hover h2, .overlay:hover h1 {
+    opacity: 1; /* Torna o texto visível */
+    transition: opacity 1s ease-in-out; /* Define uma transição suave para a opacidade */
+}
+
+/* Estilo para h2 */
+h2 {
+    color: #004080; /* Define a cor do título h2 como azul escuro */
+}
+
+/* Estilo para títulos gerais */
+.titulo {
+    color: white; /* Define a cor dos títulos como branca */
+}
+
+strong {
+    color: #004080; /* Define a cor do texto em negrito como azul escuro */
+}
+
+/* Estilo para contêiner de imagens */
+.imagens-container {
+    display: flex; /* Organiza as imagens lado a lado */
+    justify-content: center; /* Centraliza as imagens */
+    gap: 20px; /* Adiciona espaçamento entre as imagens */
+    flex-wrap: wrap; /* Permite que as imagens se ajustem em telas menores */
+}
+
+/* Estilo das imagens com hover */
+.imagem-hover {
+    position: relative; /* Posiciona o texto sobre a imagem */
+    display: inline-block; /* Define o estilo do elemento de imagem como bloco em linha */
+}
+
+.imagem-hover img {
+    display: block; /* Garante que a imagem ocupe toda a área */
+    border-radius: 10px; /* Adiciona bordas arredondadas às imagens */
+}
+
+/* Estilo do texto sobre a imagem */
+.texto-hover {
+    position: absolute; /* Posiciona o texto sobre a imagem */
+    bottom: 0; /* Alinha o texto ao fundo da imagem */
+    left: 0; /* Alinha o texto à esquerda */
+    right: 0; /* Alinha o texto à direita */
+    background: rgba(0, 64, 128, 0.7); /* Aplica um fundo semitransparente */
+    color: white; /* Define a cor do texto como branca */
+    padding: 10px; /* Adiciona um preenchimento ao redor do texto */
+    text-align: center; /* Centraliza o texto */
+    font-size: 14px; /* Define o tamanho da fonte */
+    border-bottom-left-radius: 10px; /* Borda arredondada inferior esquerda */
+    border-bottom-right-radius: 10px; /* Borda arredondada inferior direita */
+    opacity: 0; /* Torna o texto invisível inicialmente */
+    transition: opacity 0.3s ease; /* Define uma transição suave para a opacidade */
+}
+
+/* Aparece no hover sobre a imagem */
+.imagem-hover:hover .texto-hover {
+    opacity: 1; /* Torna o texto visível ao passar o mouse sobre a imagem */
+}
+
+/* Estilo das imagens dentro do contêiner */
+.imagens-container img {
+    width: 200px; /* Define o tamanho das imagens */
+    height: 200px; /* Mantém a proporção das imagens */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra suave às imagens */
+    transition: transform 0.3s ease; /* Define uma transição suave ao passar o mouse */
+}
+
+/* Efeito de zoom ao passar o mouse sobre as imagens */
+.imagens-container img:hover {
+    transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+}
+
+/* Rodapé */
+footer {
+    background-color: #003366; /* Define a cor de fundo do rodapé */
+    color: white; /* Define a cor do texto como branca */
+    padding: 20px; /* Adiciona um preenchimento ao redor do rodapé */
+}
+
+/* Estilização dos eventos turísticos */
+.eventos-container {
+    display: flex; /* Organiza as imagens lado a lado */
+    justify-content: center; /* Centraliza as imagens */
+    align-items: center; /* Alinha verticalmente as imagens */
+    gap: 20px; /* Adiciona espaçamento entre as imagens */
+    margin-top: 20px; /* Adiciona uma margem superior */
+    flex-wrap: wrap; /* Permite que as imagens se ajustem em telas menores */
+}
+
+/* Estilo das imagens de eventos turísticos */
+.eventos-container img {
+    width: 250px; /* Define o tamanho das imagens de eventos */
+    height: auto; /* Mantém a proporção original das imagens */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: transform 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+/* Efeito de zoom nos eventos ao passar o mouse */
+.eventos-container img:hover {
+    transform: scale(1.1); /* Aumenta a imagem */
+}
+
+/* Estilo para listas (sem marcadores) */
+ul {
+    list-style-type: none; /* Remove os marcadores das listas */
+    padding-bottom: 10px; /* Adiciona um espaçamento na parte inferior da lista */
+    margin: 0; /* Remove a margem da lista */
+}
+
+/* Estilo das redes sociais */
+.redes-sociais {
+    color: white; /* Cor branca para as redes sociais */
+}
+
+/* Estilo para o logo */
+.container-logo {
+    background-color: white; /* Cor de fundo branca */
+    display: flex; /* Flexbox para alinhar o conteúdo */
+    justify-content: center; /* Centraliza o logo */
+    align-items: end; /* Alinha o logo ao fundo */
+}
+
+#logo {
+    height: 100px; /* Define a altura do logo */
+}
+
+/* Estilo das seções */
+.section {
+    padding: 50px 20px; /* Adiciona preenchimento à seção */
+    background-color: #fff; /* Cor de fundo branca */
+    margin-bottom: 20px; /* Margem inferior */
+    position: relative; /* Posicionamento relativo para aplicar pseudo-elementos */
+}
+
+/* Estilo do pseudo-elemento após a seção */
+.section::after {
+    content: ""; /* Cria um pseudo-elemento vazio */
+    display: block; /* Torna o pseudo-elemento um bloco */
+    width: 100%; /* Largura total */
+    height: 3px; /* Define altura */
+    background: linear-gradient(to right, #0072ff, #00c6ff); /* Adiciona um gradiente como fundo */
+    margin: 30px 0; /* Margem superior e inferior */
+}

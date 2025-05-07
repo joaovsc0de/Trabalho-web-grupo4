@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Definindo a codificação de caracteres para garantir que caracteres especiais sejam exibidos corretamente -->
+    <meta charset="UTF-8">
+    
+    <!-- Tornando o site responsivo para diferentes dispositivos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título da página, que aparece na aba do navegador -->
+    <title>Turismo em Petrópolis</title>
+    
+    <!-- Importando o arquivo CSS para estilizar o layout da página -->
+    <link rel="stylesheet" href="../css/style.css"> 
+    
+    <!-- Importando o arquivo CSS do Bootstrap para usar as suas classes de layout -->
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css" /> 
+</head>
+<body>
+
+    <!-- Logo do site, centralizado no topo -->
+    <div class="container-logo">
+        <header class="layout-header">
+            <!-- Imagem do logo -->
+            <img src="../img/pet.png" alt="" id="logo">
+        </header>
+    </div>
+
+    <!-- Seção principal com a imagem de fundo -->
+    <section class="home" id="home"> 
+        <div class="home-container"> 
+            <!-- Imagem de destaque com largura de 100% -->
+            <img src="../img/home.png" width="100%" alt="Imagem representativa de Petrópolis" id="homing">
+            
+            <!-- Overlay para colocar um texto sobre a imagem -->
+            <div class="overlay">
+                <h1 class="title">Petrocity View</h1> <!-- Título principal sobre a imagem -->
+                <h2 class="subtitulo">Um guia de Petrópolis</h2> <!-- Subtítulo sobre a imagem -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Cabeçalho abaixo da imagem, com título e menu de navegação -->
+    <header>
+        <h1>Turismo em Petrópolis</h1> <!-- Título principal da seção -->
+        <nav> <!-- Menu de navegação -->
+            <ul>
+                <!-- Links para as diferentes seções da página -->
+                <li><a href="#home">Home</a></li>
+                <li><a href="#atracoes">Principais Atrações</a></li>
+                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="#leste">Área Leste</a></li>
+                <li><a href="#oeste">Área Oeste</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de atrações históricas em Petrópolis -->
+    <section id="atracoes">
+        <h2>Principais Atrações Históricas</h2>
+        <ul>
+            <!-- Lista de atrações históricas -->
+            <li><strong>Museu de Cera de Petrópolis</strong> – Primeiro museu de cera do Brasil, com estátuas hiper-realistas.</li>
+            <li><strong>Palácio de Cristal</strong> – Construção usada para eventos culturais.</li>
+            <li><strong>Casa de Santos Dumont</strong> – Residência do inventor Santos Dumont.</li>
+            <li><strong>Palácio Quitandinha</strong> – Antigo cassino transformado em centro cultural.</li>
+            <li><strong>Casa da Princesa Isabel</strong> – Residência histórica com exposições sobre a monarquia.</li>
+            <li><strong>Casa de Petrópolis (Casa de Sete Erros)</strong> – Casarão do século XIX com exposições culturais.</li>
+            <li><strong>Rua Teresa</strong> – Região conhecida por lojas e restaurantes típicos.</li>
+        </ul>
+    </section>
+
+    <!-- Seção de eventos conhecidos de Petrópolis -->
+    <section id="eventos">
+        <h2>🎭 Eventos mais conhecidos de Petrópolis</h2>
+        <ul>
+            <!-- Lista de eventos tradicionais em Petrópolis -->
+            <li><strong>Bauernfest</strong> – Festa tradicional alemã.</li>
+            <li><strong>Festival do Chocolate</strong> – Evento anual para amantes de chocolate.</li>
+            <li><strong>Festival de Inverno</strong> – Festival com apresentações culturais e musicais.</li>
+            <li><strong>Natal Imperial</strong> – Espetáculos natalinos pela cidade.</li>
+        </ul>
+        
+        <!-- Container para as imagens dos eventos -->
+        <div class="eventos-container">
+            <!-- Imagens dos eventos com texto explicativo -->
+            <div class="imagem-hover">
+              <img src="../img/bauer.png" alt="Bauernfest">
+              <div class="texto-hover">Festa alemã com trajes típicos e culinária tradicional.</div>
+            </div>
+            <div class="imagem-hover">
+              <img src="../img/quitandinha.png" alt="Festival de inverno">
+              <div class="texto-hover">Evento cultural com música, dança e exposições.</div>
+            </div>
+            <div class="imagem-hover">
+              <img src="../img/natal1.png" alt="Natal Imperial">
+              <div class="texto-hover">Decoração natalina e shows pela cidade.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção da Área Leste de Petrópolis -->
+    <section id="leste">
+        <h2>Área Leste</h2>
+        <p>Explore a cultura e história da área leste de Petrópolis.</p>
+        <ul>
+            <!-- Lista de pontos turísticos na área leste -->
+            <li>Museu Imperial</li>
+            <li>Palácio de Cristal</li>
+            <li>Catedral São Pedro de Alcântara</li>
+        </ul>
+        
+        <!-- Container de imagens da Área Leste -->
+        <div class="imagens-container">
+            <!-- Cada imagem tem um texto sobrepondo que aparece ao passar o mouse -->
+            <div class="imagem-hover">
+                <img src="../img/museu_imperial.png" alt="Museu">
+                <div class="texto-hover">Museu Imperial - História do Brasil Imperial</div>
+            </div>
+        
+            <div class="imagem-hover">
+                <img src="../img/palacio_crystal.png" alt="Palácio de Cristal">
+                <div class="texto-hover">Palácio de Cristal - Espaço cultural e turístico</div>
+            </div>
+        
+            <div class="imagem-hover">
+                <img src="../img/catedral_1.png" alt="Catedral">
+                <div class="texto-hover">Catedral São Pedro de Alcântara - Arquitetura neogótica</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção da Área Oeste de Petrópolis -->
+    <section id="oeste">
+        <h2>Área Oeste</h2>
+        <p>Descubra as belezas naturais da área oeste de Petrópolis.</p>
+        <ul>
+            <!-- Lista de pontos turísticos na área oeste -->
+            <li>Parque Nacional da Serra dos Órgãos</li>
+            <li>Cachoeira Véu da Noiva</li>
+            <li>Fazenda Samambaia</li>
+        </ul>
+        
+        <!-- Container de imagens da Área Oeste -->
+        <div class="imagens-container">
+            <div class="imagem-hover">
+                <img src="../img/acu.png" alt="Parque">
+                <div class="texto-hover">Trilhas e mirantes incríveis no Parque Nacional.</div>
+            </div>
+            <div class="imagem-hover">
+                <img src="../img/vel_da_noiva.png" alt="Cachoeira Véu da Noiva">
+                <div class="texto-hover">Cachoeira perfeita para fotos e contato com a natureza.</div>
+            </div>
+            <div class="imagem-hover">
+                <img src="../img/samambaia.png" alt="Fazenda Samambaia">
+                <div class="texto-hover">Fazenda histórica com jardins deslumbrantes.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé com informações de contato e redes sociais -->
+    <footer id="contato">
+        <!-- Texto sobre direitos autorais -->
+        <p>&copy; 2025 Turismo Petrópolis - Todos os direitos reservados.</p>
+        
+        <!-- Informações de endereço e contato -->
+        <p>Secretaria de Turismo de Petrópolis - Endereço: R. da Imperatriz, 345 - Centro, Petrópolis - RJ</p>
+        <p>Contato: <a href="mailto:turismo@petropolis.br">turismo@petropolis.br</a></p>
+        <p>Telefone: (24)25685-310 | (24) 2246-9467</p>
+        
+        <!-- Links para redes sociais -->
+        <div class="redes-sociais">
+            <a href="https://www.instagram.com/turismo.petropolis/">Instagram</a> | 
+            <a href="https://api.whatsapp.com/send/?phone=552422469101">WhatsApp</a>
+        </div>
+    </footer>
+
+</body>
+</html>
