@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação do texto para evitar caracteres estranhos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade -->
+    <title>Turismo em Petrópolis</title> <!-- Título do site -->
+    <link rel="stylesheet" href="../css/style.css"> <!-- Importação do arquivo CSS -->
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css" /> 
+
+
+</head>
+<body>
+
+    <div class="container-logo">
+        <header class="layout-header" >
+            <img src="../img/pet.png" alt="" id="logo">
+        </header>
+    </div>
+   
+    <!-- Seção Principal - Imagem de fundo -->
+     <section class="home" id="home"> 
+         <div class="home-container"> 
+            <img src="../img/home.png" width="100%" alt="Imagem representativa de Petrópolis" id="homing"> <!-- Imagem de destaque -->
+            <div class="overlay"> <!-- Camada escura sobre a imagem para melhorar a legibilidade -->
+                <h1 class="title">Petrocity View </h1>
+                <h2 class="subtitulo">Um guia de Petrópolis</h2>
+             </div>
+        </div>
+    </section>
+
+    <!-- Cabeçalho (abaixo da imagem) -->
+    <header>
+        <h1>Turismo em Petrópolis</h1> <!-- Título principal -->
+        <nav> <!-- área de navegação-->
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#atracoes">Principais Atrações</a></li>
+                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="#leste">Área Leste</a></li>
+                <li><a href="#oeste">Área Oeste</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de Atrações Históricas -->
+    <section id="atracoes">
+        <h2> Principais Atrações Históricas</h2>
+        <ul>
+            <li><strong>Museu de Cera de Petrópolis</strong>– Primeiro museu de cera do Brasil, com estátuas hiper-realistas de personalidades nacionais e internacionais.</li>
+            <li><strong>Palácio de Cristal</strong>– Construção icônica usada para eventos culturais.</li>
+            <li><strong>Casa de Santos Dumont</strong> – Residência do inventor, com objetos históricos e curiosidades.</li>
+            <li><strong>Palácio Quitandinha</strong> – Construído na década de 1940, o palácio já foi um dos maiores cassinos do Brasil e hoje é um centro cultural com exposições e eventos.</li>
+            <li><strong>Casa da Princesa Isabel</strong>– Residência histórica que pertenceu à princesa Isabel, com arquitetura preservada e exposições sobre a monarquia.</li>
+            <li><strong>Casa de Petrópolis (Casa de Sete Erros)</strong> – Casarão do século XIX com arquitetura curiosa e exposições culturais.</li>
+            <li><strong>Rua Teresa</strong> – Região conhecida por suas lojas e restaurantes típicos.</li>
+        </ul>
+    </section>
+
+    <!-- Seção de Eventos -->
+    <section id="eventos">
+        <h2>🎭 Eventos mais conhecidos de Petrópolis</h2>
+        <ul>
+            <li><strong>Bauernfest</strong> – Festa tradicional alemã celebrando a imigração germânica.</li>
+            <li><strong>Festival do Chocolate</strong> – Evento anual dedicado aos amantes de chocolate, com degustações e workshops.</li>
+            <li><strong>Festival de Inverno</strong> – Evento anual com apresentações musicais e culturais.</li>
+            <li><strong>Natal Imperial</strong> – Espetáculos natalinos e decoração especial pela cidade.</li>
+        </ul>
+        <div class="eventos-container">
+            <img src="../img/bauer.png" alt="Bauernfest">
+            <img src="../img/quitandinha.png" alt="Festival de inverno">
+            <img src="../img/natal1.png" alt="Natal">
+        </div>
+    </section>
+
+    <!-- Seção de Gastronomia -->
+    <!-- <section id="gastronomia">
+        <h2>🍽️ Gastronomia</h2>
+        <ul>
+            <li><strong>Cervejaria Bohemia</strong> – Uma das cervejarias mais famosas do Brasil, com visitas guiadas.</li>
+            <li><strong>Restaurante Alcântara Petrópolis</strong> – Especializado em frutos do mar e pratos brasileiros.</li>
+            <li><strong>Churrascaria Lago Sul</strong> – Steakhouse com cortes nobres e churrasco brasileiro.</li>
+            <li><strong>Tradição Imperial</strong> – Mistura sabores da culinária brasileira e japonesa.</li>
+            <li><strong>Cantina Giulietta</strong> – Massas italianas e pizzas artesanais.</li>
+            <li><strong>Alquimia dos Temperos</strong> – Opções veganas criativas e naturais.</li>
+        </ul>
+    </section> -->
+
+    <!-- Seção Área Leste -->
+    <section id="leste">
+        <h2>Área Leste</h2>
+        <p>Explore a cultura e história da área leste de Petrópolis.</p>
+        <ul>
+            <li>Museu Imperial</li>
+            <li>Palácio de Cristal</li>
+            <li>Catedral São Pedro de Alcântara</li>
+        </ul>
+        <div class="imagens-container">
+            <img src="../img/museu_imperial.png" alt="Museu">
+            <img src="../img/palacio_crystal.png" alt="Palácio de Cristal">
+            <img src="../img/catedral_1.png" alt="Catedral">
+        </div>
+    </section>
+
+    <!-- Seção Área Oeste -->
+    <section id="oeste">
+        <h2>Área Oeste</h2>
+        <p>Descubra as belezas naturais da área oeste de Petrópolis.</p>
+        <ul>
+            <li>Parque Nacional da Serra dos Órgãos</li>
+            <li>Cachoeira Véu da Noiva</li>
+            <li>Fazenda Samambaia</li>
+        </ul>
+        <div class="imagens-container">
+            <img src="../img/acu.png" alt="Parque">
+            <img src="../img/vel_da_noiva.png" alt="Cachoeira Veu da noiva">
+            <img src="../img/samambaia.png" alt="Marambaia">
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer id="contato">
+        <p>&copy; 2025 Turismo Petrópolis - Todos os direitos reservados.</p>
+        <p>Secretaria de Turismo de Petrópolis - Endereço: R. da Imperatriz, 345 - Centro, Petrópolis - RJ, </p>
+        <p>Contato: <a href="mailto:turismo@petropolis.br"></a></p>
+    <p>Telefone: (24)25685-310
+        | (24) 2246-9467</p>
+        <div class="redes-sociais">
+            <a href="https://www.instagram.com/turismo.petropolis/">Instagram</a> | <a href="https://api.whatsapp.com/send/?phone=552422469101">WhatsApp</a>
+        </div>
+    </footer>
+</body>
+</html>
